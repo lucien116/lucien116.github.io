@@ -53,7 +53,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --baseURL "https://www.lucien116.com/" \
             --cacheDir "${RUNNER_TEMP}/hugo-cache"
 
       - name: Upload artifact
