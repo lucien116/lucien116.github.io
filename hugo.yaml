@@ -1,0 +1,78 @@
+baseURL: "https://lucien116.github.io/"
+locale: "zh-Hans"
+defaultContentLanguage: "zh"
+title: "Lucien's Blog"
+theme:
+  - PaperMod
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 10
+
+taxonomies:
+  category: categories
+  tag: tags
+
+params:
+  env: production
+  description: "很高兴遇见你！"
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowToc: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  comments: false
+  hideFooter: true
+  assets:
+    favicon: /favicon.ico
+    disableHLJS: true
+  author: lucien116
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+outputFormats:
+  RSS:
+    mediaType: application/rss+xml
+    baseName: feed
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+menu:
+  main:
+    - name: 主页
+      url: /
+      weight: 1
+    - name: 网络安全
+      url: /categories/网络安全/
+      weight: 2
+    - name: 随笔
+      url: /categories/随笔/
+      weight: 3
+    - name: 归档
+      url: /all/
+      weight: 4
+    - name: 标签
+      url: /tags/
+      weight: 5
+    - name: 关于我
+      url: /about/
+      weight: 6
