@@ -26,11 +26,17 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   comments: false
-  hideFooter: true
+  hideFooter: false
   assets:
     favicon: /favicon.ico
     disableHLJS: true
   author: lucien116
+  homeInfoParams:
+    Title: "很高兴遇见你！"
+    Content: |
+      这里是 Lucien 改版后的新博客，记录网络安全技术与生活思考。
+
+      [关于我](/about/) · [文章归档](/all/)
 
 markup:
   highlight:
