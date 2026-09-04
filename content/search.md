@@ -1,8 +1,8 @@
 
 ---
-title: "Search" # in any language you want
+title: "搜索" # in any language you want
 layout: "search" # necessary for search
-summary: "Search"
+summary: "搜索本站文章"
 url: "/search/"
-placeholder: "placeholder text in search input box"
+placeholder: "输入关键词搜索文章"
 ---
